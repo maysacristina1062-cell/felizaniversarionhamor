@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<title>Surpresa 💖</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    overflow: hidden;
+    text-align: center;
+    background: linear-gradient(135deg, #660202, #aa0303);
+    color: white;
+}
+
+/* TELAS */
+.tela {
+    display: none;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ativa {
+    display: flex;
+}
+
+/* BOTÃO */
+button {
+    padding: 15px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background: white;
+    color: #ff4d6d;
+    cursor: pointer;
+}
+
+/* TELA 2 */
+.nome { 
+    max-width: 600px; 
+    margin: 0 auto; 
+    text-align: center; 
+    line-height: 1.4; }
+
+.coracao {
+    font-size: 60px;
+    animation: bater 1s infinite;
+    cursor: pointer;
+}
+
+@keyframes bater {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+.foto {
+    position: absolute;
+    width: 290px;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+}
+
+.foto:hover {
+    transform: scale(1.05);
+}
+
+/* ESQUERDA */
+.left { left: 20px; }
+.right { right: 20px; }
+
+.top { top: 20px; }
+.middle { top: 50%; transform: translateY(-50%); }
+.bottom { bottom: 20px; }
+
+/* CONFETE E CORAÇÃO */
+.particula {
+    position: absolute;
+    top: -10px;
+    font-size: 20px;
+    animation: cair linear infinite;
+}
+
+@keyframes cair {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+#tela3 h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#tela3 p {
+    font-family: 'Poppins', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-size: 18px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* CAIXINHA BONITA */
+#tela3 {
+    background: linear-gradient(135deg,  #660202, #aa0303);
+}
+
+#tela3 p {
+    background: rgba(255,255,255,0.1);
+    padding: 25px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+}
+
+.canto {
+    position: absolute;
+    font-size: 100px;
+    animation: pulsar 1s infinite;
+    filter: drop-shadow(0 0 10px pink);
+}
+
+/* POSIÇÕES */
+.top-left { top: 15px; left: 15px; }
+.top-right { top: 15px; right: 15px; }
+.bottom-left { bottom: 15px; left: 15px; }
+.bottom-right { bottom: 15px; right: 15px; }
+
+/* animação com glow */ @keyframes pulsar { 0%, 100% { transform: scale(1); filter: drop-shadow(0 0 5px pink); } 50% { transform: scale(1.3); filter: drop-shadow(0 0 20px pink); } }
+
+</style>
+</head>
+
+<body>
+
+<!-- TELA 1 -->
+<div class="tela ativa" id="tela1">
+    <h1>Tenho algo pra você nha mor💌</h1>
+    <button onclick="proximaTela(2)">Clique aqui</button>
+    <div class="canto top-left">❤️</div> <div class="canto top-right">❤️</div> <div class="canto bottom-left">❤️</div> <div class="canto bottom-right">❤️</div>
+</div>
+
+<!-- TELA 2 -->
+<div class="tela" id="tela2">
+
+<!-- FOTOS ESQUERDA -->
+<img src="foto1.jpg" class="foto left top">
+<img src="foto2.jpg" class="foto left middle">
+<img src="foto3.jpg" class="foto left bottom">
+
+<!-- FOTOS DIREITA -->
+<img src="foto4.jpg" class="foto right top">
+<img src="foto5.jpg" class="foto right middle">
+<img src="foto6.jpg" class="foto right bottom">
+
+    <div class="nome"> Leonel Augusto <br> o pika da minha galaxiaaaa, <br> aqui vemos o amor da minha vida <br> sendo lindo e gostoso de qualquer jeito 🫦 </div>
+    <div class="coracao" onclick="proximaTela(3)">❤️</div>
+
+</div>
+
+<!-- TELA 3 -->
+<div class="tela" id="tela3">
+    <h1>Feliz Aniversário para o homem da minha vida 🎉</h1>
+    <p>
+        <br> Hoje o mundo ficou mais bonito… porque foi o dia em que você nasceu. <br>
+
+        <br> Meu amor, eu não sei explicar com palavras tudo o que você significa pra mim, porque o que eu sinto vai muito além do que palavras podem expressar. <br>
+        Você é o meu lugar seguro, a minha paz em meio ao caos, o motivo dos meus sorrisos mais sinceros e dos meus dias mais felizes.
+        Amar você é a coisa mais linda que já me aconteceu. É leve, é intenso, é verdadeiro… é como se o meu coração tivesse encontrado exatamente onde sempre deveria estar: em você❤️.
+        <br> Eu desejo que a vida te abrace com tudo de melhor que existe, que cada sonho seu se realize e que nunca te falte motivos pra sorrir. <br> 
+        <br> E, acima de tudo, que eu possa estar ao seu lado em cada conquista, em cada fase, em cada momento… te amando cada dia mais.<br>
+        Eu estarei aqui, sempre, para te apoiar, para te amar, para ser a sua companheira de vida. Porque você é o meu amor, o meu melhor amigo, o meu tudo.
+        <br> No palco da vida, eu te aplaudo de pé, porque você é o protagonista da minha história, o herói do meu coração. <br>
+
+        <br> Feliz aniversário, meu amor💚. <br>
+        <br> Você é, e sempre vai ser, a melhor parte de mim. <br>
+        <br> Te amo mais do que palavras, gestos e ações podem dizer, hoje e sempre. 💖 <br>
+    </p>
+</div>
+
+<audio id="musica" loop> <source src="musica.mp3" type="audio/mpeg"> </audio>
+
+<script>
+
+function proximaTela(num) {
+    document.querySelectorAll(".tela").forEach(t => t.classList.remove("ativa"));
+    document.getElementById("tela" + num).classList.add("ativa");
+
+    if(num === 3){
+        iniciarAnimacao();
+    }
+
+    let musica = document.getElementById("musica");
+
+    if(num === 2 && musica.paused){
+        musica.volume = 0.5;
+        musica.play();
+    }
+}
+
+/* CONFETE + CORAÇÕES */
+function iniciarAnimacao(){
+    for(let i=0; i<50; i++){
+        let el = document.createElement("div");
+        el.className = "particula";
+        el.innerHTML = Math.random() > 0.5 ? "🎉" : "💖";
+        el.style.left = Math.random() * 100 + "vw";
+        el.style.animationDuration = (Math.random()*3+2) + "s";
+        document.body.appendChild(el);
+    }
+}
+</script>
+
+</body>
+</html>
